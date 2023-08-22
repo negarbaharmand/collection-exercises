@@ -9,7 +9,10 @@ public class CollectionExercises {
         //ex3();
         //ex4();
         //ex5();
-        ex6();
+        //ex6();
+        //ex7();
+        //ex8();
+        ex9();
     }
 
     public static void ex1() {
@@ -111,5 +114,44 @@ public class CollectionExercises {
         List<String> daysOfWeekList = new ArrayList<>(daysOfWeekSet);
 
         System.out.println("ArrayList Days of the week : " + daysOfWeekList);
+    }
+
+    public static void ex7() {
+        Set<String> randomNamesSet = new HashSet<>();
+        randomNamesSet.add("Negar");
+        randomNamesSet.add("Behnam");
+        randomNamesSet.add("Sara");
+        randomNamesSet.add("Luke");
+        randomNamesSet.add("Sofia");
+        randomNamesSet.add("Goli");
+        randomNamesSet.add("Lily");
+
+        List<String> randomNamesList = new ArrayList<>(randomNamesSet);
+        Collections.sort(randomNamesList);
+        System.out.println("Sorted names list: " + randomNamesList);
+
+    }
+
+    public static void ex8() {
+        Set<String> namesTreeSet = new TreeSet<>();
+        namesTreeSet.add("Negar");
+        namesTreeSet.add("Behnam");
+        namesTreeSet.add("Sara");
+        namesTreeSet.add("Alain");
+        namesTreeSet.add("Sofia");
+        namesTreeSet.add("Goli");
+        namesTreeSet.add("Lily");
+        System.out.println("Sorted names from TreeSet: " + namesTreeSet);
+
+    }
+    public static void ex9(){
+        Map<Integer, String> carBrandsMap = new HashMap<>();
+        carBrandsMap.put(1, "Volvo");
+        carBrandsMap.put(2, "AOD");
+        carBrandsMap.put(3, "Ford");
+        carBrandsMap.put(4, "Jeep");
+        carBrandsMap.put(5, "BMW");
+
+        System.out.println("Car brands are: " + carBrandsMap);
     }
 }
