@@ -144,14 +144,26 @@ public class CollectionExercises {
         System.out.println("Sorted names from TreeSet: " + namesTreeSet);
 
     }
-    public static void ex9(){
-        Map<Integer, String> carBrandsMap = new HashMap<>();
-        carBrandsMap.put(1, "Volvo");
-        carBrandsMap.put(2, "AOD");
-        carBrandsMap.put(3, "Ford");
-        carBrandsMap.put(4, "Jeep");
-        carBrandsMap.put(5, "BMW");
 
-        System.out.println("Car brands are: " + carBrandsMap);
+    public static void ex9() {
+        Map<Integer, String> carBrandsMap = new HashMap<>();
+        carBrandsMap.put(123, "Volvo");
+        carBrandsMap.put(562, "AOD");
+        carBrandsMap.put(783, "Ford");
+        carBrandsMap.put(497, "Jeep");
+        carBrandsMap.put(55, "BMW");
+
+        System.out.println("Car brands and Ids are: " + carBrandsMap);
+        // ex10
+        System.out.println("Car brands Id are: ");
+        for (Integer carID : carBrandsMap.keySet()) {
+            System.out.println(carID);
+            //ex11
+            System.out.println("Car brands names are: ");
+            for (String carBrand : carBrandsMap.values()) {
+                System.out.println(carBrand);
+            }
+
+        }
     }
 }
